@@ -1,3 +1,13 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 600@100MHz
+D Inductor, small symbol
+K inductor choke coil reactor magnetic
+$ENDCMP
+#
+$CMP AUDIO_JACK_3.5MM
+D DC Barrel Jack
+K DC power barrel jack connector
+$ENDCMP
+#
 #End Doc Library
