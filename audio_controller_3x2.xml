@@ -2,8 +2,8 @@
 <export version="D">
   <design>
     <source>/home/polidorop/git/kicad/audio_controller_3x2/audio_controller_3x2.sch</source>
-    <date>Fri 24 Mar 2017 04:21:02 PM EDT</date>
-    <tool>Eeschema no-vcs-found-ea10a67~58~ubuntu16.04.1</tool>
+    <date>Mon 27 Mar 2017 02:01:39 PM EDT</date>
+    <tool>Eeschema no-vcs-found-0f0cb64~58~ubuntu16.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>audio_controller_3x2</title>
@@ -40,7 +40,7 @@
         <field name="PartNumber">SGTL5000XNAA3R2CT-ND</field>
         <field name="Description">Stereo Audio Interface 32-QFN</field>
       </fields>
-      <libsource lib="audio_controller_3x2" part="SGTL5000"/>
+      <libsource lib="audio_controller_3x2-rescue" part="SGTL5000-RESCUE-audio_controller_3x2"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>58D57661</tstamp>
     </comp>
@@ -363,10 +363,10 @@
         <pin num="VEE" name="VEE_(+4-5VDC)" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="audio_controller_3x2" part="SGTL5000">
+    <libpart lib="audio_controller_3x2-rescue" part="SGTL5000-RESCUE-audio_controller_3x2">
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">SGTL5000</field>
+        <field name="Value">SGTL5000-RESCUE-audio_controller_3x2</field>
         <field name="Footprint">audio_controller_3x2:QFN-5x5-32</field>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">SGTL5000XNAA3R2CT-ND</field>
@@ -397,13 +397,16 @@
         <pin num="27" name="CTRL_DATA" type="BiDi"/>
         <pin num="29" name="CTRL_CLK" type="BiDi"/>
         <pin num="30" name="VDDD" type="power_in"/>
-        <pin num="31" name="CTRL_ADR0_CS" type="passive"/>
-        <pin num="32" name="CTRL_MODE" type="passive"/>
+        <pin num="31" name="CTRL_ADR0_CS" type="BiDi"/>
+        <pin num="32" name="CTRL_MODE" type="BiDi"/>
         <pin num="PAD" name="GND" type="power_in"/>
       </pins>
     </libpart>
   </libparts>
   <libraries>
+    <library logical="audio_controller_3x2-rescue">
+      <uri>/home/polidorop/git/kicad/audio_controller_3x2/audio_controller_3x2-rescue.lib</uri>
+    </library>
     <library logical="audio_controller_3x2">
       <uri>/home/polidorop/git/kicad/audio_controller_3x2/audio_controller_3x2.lib</uri>
     </library>

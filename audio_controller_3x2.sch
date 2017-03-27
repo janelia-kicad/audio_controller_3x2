@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:audio_controller_3x2-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -159,7 +160,7 @@ I2STX
 Text Label 4000 1200 0    60   ~ 0
 LRCLK
 $Comp
-L SGTL5000 U1
+L SGTL5000-RESCUE-audio_controller_3x2 U1
 U 1 1 58D57661
 P 5750 4650
 F 0 "U1" H 6300 5350 60  0000 C CNN

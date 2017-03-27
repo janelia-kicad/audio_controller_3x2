@@ -3,7 +3,7 @@
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad "KiCad's Pcbnew")
-    (host_version "no-vcs-found-ea10a67~58~ubuntu16.04.1")
+    (host_version "no-vcs-found-0f0cb64~58~ubuntu16.04.1")
   )
   (resolution um 10)
   (unit um)
@@ -21,8 +21,8 @@
       )
     )
     (boundary
-      (path pcb 0  85725 -68580  155575 -68580  155575 -109220  85725 -109220
-            85725 -68580  85725 -68580)
+      (path pcb 0  155575 -109220  85725 -109220  85725 -68580  155575 -68580
+            155575 -109220)
     )
     (via "Via[0-1]_889:635_um")
     (rule
@@ -40,24 +40,24 @@
       (place MDB1 107315 -88900 front 0 (PN MODULAR_DEVICE_BASE_3X2_MALE))
     )
     (component audio_controller_3x2:SM1210
-      (place C1 125730 -99060 back 270 (PN 0.1uF))
+      (place C1 130810 -99060 back 270 (PN 0.1uF))
       (place C3 140970 -99060 back 90 (PN 0.1uF))
-      (place C5 107315 -78740 back 90 (PN 2.2uF))
-      (place C7 122555 -78740 back 90 (PN 2.2uF))
-      (place R2 112395 -88900 back 90 (PN 2.21k))
+      (place C5 130810 -78740 back 90 (PN 2.2uF))
+      (place C7 146050 -78740 back 90 (PN 2.2uF))
+      (place R2 120650 -78740 back 90 (PN 2.21k))
     )
     (component audio_controller_3x2:SM1210::1
-      (place C2 135890 -99060 back 90 (PN 2.2uF))
-      (place C4 120650 -99060 back 270 (PN 0.15uF))
-      (place C6 112395 -78740 back 90 (PN 0.1uF))
-      (place L1 130810 -99060 back 270 (PN 600))
-      (place R1 107315 -88900 back 90 (PN 2.21k))
+      (place C2 146050 -99060 back 90 (PN 2.2uF))
+      (place C4 125730 -99060 back 270 (PN 0.15uF))
+      (place C6 135890 -78740 back 90 (PN 0.1uF))
+      (place L1 135890 -99060 back 270 (PN 600))
+      (place R1 125730 -78740 back 90 (PN 2.21k))
     )
     (component audio_controller_3x2:AUDIO_JACK_3.5MM_3PIN
       (place J1 155575 -88900 back 0 (PN AUDIO_JACK_3.5MM))
     )
     (component "audio_controller_3x2:SOT-23-3"
-      (place U2 117475 -78740 back 180 (PN AP7313_1.5V))
+      (place U2 140970 -78740 back 180 (PN AP7313_1.5V))
     )
   )
   (library
@@ -324,7 +324,7 @@
     (net /LRCLK
       (pins U1-23 MDB1-23)
     )
-    (class kicad_default
+    (class kicad_default ""
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
@@ -333,12 +333,12 @@
         (clearance 25.5)
       )
     )
-    (class GND /HP_VGND GND
+    (class GND GND
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
       (rule
-        (width 406.4)
+        (width 304.8)
         (clearance 101.7)
       )
     )
@@ -351,24 +351,26 @@
         (clearance 254.1)
       )
     )
-    (class POWER +1V5 +3V3 VDD VEE
+    (class POWER +1V5 +3V3
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
       (rule
-        (width 406.4)
-        (clearance 254.1)
+        (width 304.8)
+        (clearance 101.7)
       )
     )
-    (class SIGNAL "" /BCLK /HP_L /HP_R /I2SRX /I2STX /LRCLK /MCLK /SCL /SDA
-      "Net-(C2-Pad1)" "Net-(C4-Pad1)" "Net-(MDB1-Pad10)" "Net-(MDB1-Pad12)"
-      "Net-(MDB1-Pad14)" "Net-(MDB1-Pad15)" "Net-(MDB1-Pad16)" "Net-(MDB1-Pad17)"
-      "Net-(MDB1-Pad2)" "Net-(MDB1-Pad20)" "Net-(MDB1-Pad21)" "Net-(MDB1-Pad24)"
-      "Net-(MDB1-Pad25)" "Net-(MDB1-Pad28)" "Net-(MDB1-Pad29)" "Net-(MDB1-Pad3)"
-      "Net-(MDB1-Pad30)" "Net-(MDB1-Pad4)" "Net-(MDB1-Pad5)" "Net-(MDB1-Pad6)"
-      "Net-(MDB1-PadAGND)" "Net-(MDB1-PadAREF)" "Net-(MDB1-PadDAC)" "Net-(U1-Pad11)"
-      "Net-(U1-Pad12)" "Net-(U1-Pad13)" "Net-(U1-Pad14)" "Net-(U1-Pad15)"
-      "Net-(U1-Pad16)" "Net-(U1-Pad18)"
+    (class SIGNAL /BCLK /HP_L /HP_R /I2SRX /I2STX /LRCLK /MCLK /SCL /SDA "Net-(C2-Pad1)"
+      "Net-(C4-Pad1)"
+      (circuit
+        (use_via Via[0-1]_889:635_um)
+      )
+      (rule
+        (width 254)
+        (clearance 101.7)
+      )
+    )
+    (class SUPERPOWER /HP_VGND
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
@@ -377,16 +379,12 @@
         (clearance 101.7)
       )
     )
-    (class SUPERPOWER
-      (circuit
-        (use_via Via[0-1]_889:635_um)
-      )
-      (rule
-        (width 1219.2)
-        (clearance 254.1)
-      )
-    )
   )
   (wiring
+    (wire (path B.Cu 304.8  133810 -90150  132060 -90150  130810 -88900)(net GND)(type protect))
+    (wire (path B.Cu 304.8  133810 -88150  131560 -88150  130810 -88900)(net GND)(type protect))
+    (wire (path B.Cu 304.8  133810 -87150  132560 -87150  130810 -88900)(net GND)(type protect))
+    (wire (path B.Cu 304.8  132560 -85900  132560 -87150  130810 -88900)(net GND)(type protect))
+    (wire (path B.Cu 304.8  132060 -85900  132060 -87650  130810 -88900)(net GND)(type protect))
   )
 )
