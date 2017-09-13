@@ -59,7 +59,7 @@ F 5 "S1011E-16-ND" H 600 1250 60  0001 C CNN "PartNumber"
 F 6 "16 Position Header Through Hole Male Pins" H 600 1350 60  0001 C CNN "Description"
 F 7 "2" H 1900 1250 60  0001 C CNN "PartCount"
 	1    2650 1550
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L VDD #PWR01
@@ -69,8 +69,8 @@ F 0 "#PWR01" H 100 -400 50  0001 C CNN
 F 1 "VDD" H 1367 923 50  0000 C CNN
 F 2 "" H 100 -250 50  0001 C CNN
 F 3 "" H 100 -250 50  0001 C CNN
-	1    1350 750
-	1    0    0    -1
+	1    1350 750 
+	1    0    0    -1  
 $EndComp
 $Comp
 L PWR_FLAG #FLG02
@@ -80,8 +80,8 @@ F 0 "#FLG02" H -150 -175 50  0001 C CNN
 F 1 "PWR_FLAG" H 1100 924 50  0000 C CNN
 F 2 "" H -150 -250 50  0001 C CNN
 F 3 "" H -150 -250 50  0001 C CNN
-	1    1100 750
-	1    0    0    -1
+	1    1100 750 
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR03
@@ -91,8 +91,8 @@ F 0 "#PWR03" H -500 -650 50  0001 C CNN
 F 1 "GND" H 705 777 50  0000 C CNN
 F 2 "" H -500 -400 50  0001 C CNN
 F 3 "" H -500 -400 50  0001 C CNN
-	1    700  950
-	1    0    0    -1
+	1    700  950 
+	1    0    0    -1  
 $EndComp
 $Comp
 L PWR_FLAG #FLG04
@@ -102,8 +102,8 @@ F 0 "#FLG04" H -550 -175 50  0001 C CNN
 F 1 "PWR_FLAG" H 700 924 50  0000 C CNN
 F 2 "" H -550 -250 50  0001 C CNN
 F 3 "" H -550 -250 50  0001 C CNN
-	1    700  750
-	1    0    0    -1
+	1    700  750 
+	1    0    0    -1  
 $EndComp
 NoConn ~ 1400 1000
 NoConn ~ 1400 1100
@@ -114,7 +114,7 @@ NoConn ~ 1400 1700
 NoConn ~ 1400 1800
 NoConn ~ 1400 2000
 NoConn ~ 1400 2200
-NoConn ~ 3900 800
+NoConn ~ 3900 800 
 NoConn ~ 3900 1400
 NoConn ~ 3900 1500
 NoConn ~ 3900 1800
@@ -129,8 +129,8 @@ F 0 "#PWR05" H 200 -50 50  0001 C CNN
 F 1 "VEE" H 4467 973 50  0000 C CNN
 F 2 "" H 200 100 50  0001 C CNN
 F 3 "" H 200 100 50  0001 C CNN
-	1    4450 800
-	1    0    0    -1
+	1    4450 800 
+	1    0    0    -1  
 $EndComp
 $Comp
 L PWR_FLAG #FLG06
@@ -140,8 +140,8 @@ F 0 "#FLG06" H 3500 -125 50  0001 C CNN
 F 1 "PWR_FLAG" H 4750 974 50  0000 C CNN
 F 2 "" H 3500 -200 50  0001 C CNN
 F 3 "" H 3500 -200 50  0001 C CNN
-	1    4750 800
-	1    0    0    -1
+	1    4750 800 
+	1    0    0    -1  
 $EndComp
 Text Label 1300 1900 2    60   ~ 0
 BCLK
@@ -155,20 +155,6 @@ Text Label 4000 1300 0    60   ~ 0
 I2STX
 Text Label 4000 1200 0    60   ~ 0
 LRCLK
-$Comp
-L SGTL5000-RESCUE-audio_controller_3x2 U1
-U 1 1 58D57661
-P 5750 4650
-F 0 "U1" H 6300 5350 60  0000 C CNN
-F 1 "SGTL5000" H 6200 3800 60  0000 C CNN
-F 2 "audio_controller_3x2:QFN-5x5-32" H 6050 5250 60  0001 C CNN
-F 3 "" H 5750 4650 60  0001 C CNN
-F 4 "digikey" H 6250 5450 60  0001 C CNN "Vendor"
-F 5 "SGTL5000XNAA3R2CT-ND" H 6350 5550 60  0001 C CNN "PartNumber"
-F 6 "Stereo Audio Interface 32-QFN" H 6450 5650 60  0001 C CNN "Description"
-	1    5750 4650
-	1    0    0    -1
-$EndComp
 Text Label 4850 4100 2    60   ~ 0
 SDA
 Text Label 4850 4200 2    60   ~ 0
@@ -208,7 +194,7 @@ F 4 "digikey" H 8600 4950 60  0001 C CNN "Vendor"
 F 5 "CP-3523SJCT-ND" H 8700 5050 60  0001 C CNN "PartNumber"
 F 6 "3.50mm Headphone Phone Jack Stereo Connector Solder" H 8800 5150 60  0001 C CNN "Description"
 	1    8500 4650
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text Label 7950 4550 2    60   ~ 0
 HP_L
@@ -225,7 +211,7 @@ F 1 "GND" H 5755 5577 50  0000 C CNN
 F 2 "" H 4550 4400 50  0001 C CNN
 F 3 "" H 4550 4400 50  0001 C CNN
 	1    5750 5750
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR08
@@ -236,7 +222,7 @@ F 1 "GND" H 4905 5077 50  0000 C CNN
 F 2 "" H 3700 3900 50  0001 C CNN
 F 3 "" H 3700 3900 50  0001 C CNN
 	1    4900 5250
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L 0.15uF C4
@@ -250,7 +236,7 @@ F 4 "digikey" H 4800 5350 60  0001 C CNN "Vendor"
 F 5 "399-11615-1-ND" H 4900 5450 60  0001 C CNN "PartNumber"
 F 6 "0.15uF 100V Ceramic Capacitor X7R 1210" H 5000 5550 60  0001 C CNN "Description"
 	1    4700 5150
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR09
@@ -261,7 +247,7 @@ F 1 "GND" H 4705 5227 50  0000 C CNN
 F 2 "" H 3500 4050 50  0001 C CNN
 F 3 "" H 3500 4050 50  0001 C CNN
 	1    4700 5400
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L AP7313_1.5V U2
@@ -275,7 +261,7 @@ F 4 "digikey" H 2550 4000 60  0001 C CNN "Vendor"
 F 5 "AP7313-15SAG-7DICT-ND" H 2650 4100 60  0001 C CNN "PartNumber"
 F 6 "Linear Voltage Regulator IC Positive Fixed 1 Output 1.5V 150mA SOT-23-3" H 2750 4200 60  0001 C CNN "Description"
 	1    2300 4100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L 2.2uF C5
@@ -289,7 +275,7 @@ F 4 "digikey" H 1800 4550 60  0001 C CNN "Vendor"
 F 5 "478-3591-1-ND" H 1900 4650 60  0001 C CNN "PartNumber"
 F 6 "2.2uF 50V Ceramic Capacitor X7R 1210" H 2000 4750 60  0001 C CNN "Description"
 	1    1700 4350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L 0.1uF C6
@@ -303,7 +289,7 @@ F 4 "digikey" H 2000 4550 60  0001 C CNN "Vendor"
 F 5 "399-13229-1-ND" H 2100 4650 60  0001 C CNN "PartNumber"
 F 6 "CAP CER 0.1UF 100V X7R 1210" H 2200 4750 60  0001 C CNN "Description"
 	1    1900 4350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L 2.2uF C7
@@ -317,7 +303,7 @@ F 4 "digikey" H 2800 4550 60  0001 C CNN "Vendor"
 F 5 "478-3591-1-ND" H 2900 4650 60  0001 C CNN "PartNumber"
 F 6 "2.2uF 50V Ceramic Capacitor X7R 1210" H 3000 4750 60  0001 C CNN "Description"
 	1    2700 4350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR010
@@ -328,7 +314,7 @@ F 1 "GND" H 1705 4427 50  0000 C CNN
 F 2 "" H 500 3250 50  0001 C CNN
 F 3 "" H 500 3250 50  0001 C CNN
 	1    1700 4600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR011
@@ -339,7 +325,7 @@ F 1 "GND" H 1905 4427 50  0000 C CNN
 F 2 "" H 700 3250 50  0001 C CNN
 F 3 "" H 700 3250 50  0001 C CNN
 	1    1900 4600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR012
@@ -350,7 +336,7 @@ F 1 "GND" H 2305 4227 50  0000 C CNN
 F 2 "" H 1100 3050 50  0001 C CNN
 F 3 "" H 1100 3050 50  0001 C CNN
 	1    2300 4400
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR013
@@ -361,7 +347,7 @@ F 1 "GND" H 2705 4427 50  0000 C CNN
 F 2 "" H 1500 3250 50  0001 C CNN
 F 3 "" H 1500 3250 50  0001 C CNN
 	1    2700 4600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L +3.3V #PWR014
@@ -371,8 +357,8 @@ F 0 "#PWR014" H 5000 800 50  0001 C CNN
 F 1 "+3.3V" H 5015 1123 50  0000 C CNN
 F 2 "" H 5000 950 50  0001 C CNN
 F 3 "" H 5000 950 50  0001 C CNN
-	1    5000 950
-	1    0    0    -1
+	1    5000 950 
+	1    0    0    -1  
 $EndComp
 $Comp
 L PWR_FLAG #FLG015
@@ -383,7 +369,7 @@ F 1 "PWR_FLAG" H 5300 1224 50  0000 C CNN
 F 2 "" H 4050 50  50  0001 C CNN
 F 3 "" H 4050 50  50  0001 C CNN
 	1    5300 1050
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L +3.3V #PWR016
@@ -394,7 +380,7 @@ F 1 "+3.3V" H 1715 4223 50  0000 C CNN
 F 2 "" H 1700 4050 50  0001 C CNN
 F 3 "" H 1700 4050 50  0001 C CNN
 	1    1700 4050
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L +1V5 #PWR017
@@ -405,7 +391,7 @@ F 1 "+1V5" H 2815 4223 50  0000 C CNN
 F 2 "" H 2800 4050 50  0001 C CNN
 F 3 "" H 2800 4050 50  0001 C CNN
 	1    2800 4050
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L +1V5 #PWR018
@@ -416,7 +402,7 @@ F 1 "+1V5" H 5600 3900 50  0000 C CNN
 F 2 "" H 5650 3750 50  0001 C CNN
 F 3 "" H 5650 3750 50  0001 C CNN
 	1    5650 3750
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L 600@100MHz L1
@@ -430,7 +416,7 @@ F 4 "digikey" H 5930 3290 60  0001 C CNN "Vendor"
 F 5 "587-1755-1-ND" H 6030 3390 60  0001 C CNN "PartNumber"
 F 6 "FERRITE BEAD 600 OHM 1210 1LN" H 6130 3490 60  0001 C CNN "Description"
 	1    5800 3150
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 $Comp
 L 0.1uF C1
@@ -444,7 +430,7 @@ F 4 "digikey" H 5450 3600 60  0001 C CNN "Vendor"
 F 5 "399-13229-1-ND" H 5550 3700 60  0001 C CNN "PartNumber"
 F 6 "CAP CER 0.1UF 100V X7R 1210" H 5650 3800 60  0001 C CNN "Description"
 	1    5350 3400
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L 2.2uF C2
@@ -458,7 +444,7 @@ F 4 "digikey" H 6300 3600 60  0001 C CNN "Vendor"
 F 5 "478-3591-1-ND" H 6400 3700 60  0001 C CNN "PartNumber"
 F 6 "2.2uF 50V Ceramic Capacitor X7R 1210" H 6500 3800 60  0001 C CNN "Description"
 	1    6200 3400
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L 0.1uF C3
@@ -472,7 +458,7 @@ F 4 "digikey" H 6500 3600 60  0001 C CNN "Vendor"
 F 5 "399-13229-1-ND" H 6600 3700 60  0001 C CNN "PartNumber"
 F 6 "CAP CER 0.1UF 100V X7R 1210" H 6700 3800 60  0001 C CNN "Description"
 	1    6400 3400
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR019
@@ -483,7 +469,7 @@ F 1 "GND" H 5355 3477 50  0000 C CNN
 F 2 "" H 4150 2300 50  0001 C CNN
 F 3 "" H 4150 2300 50  0001 C CNN
 	1    5350 3650
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR020
@@ -494,7 +480,7 @@ F 1 "GND" H 6205 3477 50  0000 C CNN
 F 2 "" H 5000 2300 50  0001 C CNN
 F 3 "" H 5000 2300 50  0001 C CNN
 	1    6200 3650
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR021
@@ -505,7 +491,7 @@ F 1 "GND" H 6405 3477 50  0000 C CNN
 F 2 "" H 5200 2300 50  0001 C CNN
 F 3 "" H 5200 2300 50  0001 C CNN
 	1    6400 3650
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L +3.3V #PWR022
@@ -516,7 +502,7 @@ F 1 "+3.3V" H 5365 3273 50  0000 C CNN
 F 2 "" H 5350 3100 50  0001 C CNN
 F 3 "" H 5350 3100 50  0001 C CNN
 	1    5350 3100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L 2.21k R1
@@ -530,7 +516,7 @@ F 4 "digikey" V 4280 3450 60  0001 C CNN "Vendor"
 F 5 "P2.21KAACT-ND" V 4380 3550 60  0001 C CNN "PartNumber"
 F 6 "RES SMD 2.21K OHM 1% 1/2W 1210" V 4480 3650 60  0001 C CNN "Description"
 	1    4100 3350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L 2.21k R2
@@ -544,7 +530,7 @@ F 4 "digikey" V 4530 3450 60  0001 C CNN "Vendor"
 F 5 "P2.21KAACT-ND" V 4630 3550 60  0001 C CNN "PartNumber"
 F 6 "RES SMD 2.21K OHM 1% 1/2W 1210" V 4730 3650 60  0001 C CNN "Description"
 	1    4350 3350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L +3.3V #PWR023
@@ -555,7 +541,7 @@ F 1 "+3.3V" H 4115 3223 50  0000 C CNN
 F 2 "" H 4100 3050 50  0001 C CNN
 F 3 "" H 4100 3050 50  0001 C CNN
 	1    4100 3050
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L +3.3V #PWR024
@@ -566,7 +552,7 @@ F 1 "+3.3V" H 4365 3223 50  0000 C CNN
 F 2 "" H 4350 3050 50  0001 C CNN
 F 3 "" H 4350 3050 50  0001 C CNN
 	1    4350 3050
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text Label 4400 3650 0    60   ~ 0
 SDA
@@ -575,24 +561,24 @@ SCL
 Text Label 1300 2100 2    60   ~ 0
 MCLK
 Wire Wire Line
-	1100 750  1100 800
+	1100 750  1100 800 
 Wire Wire Line
-	1100 800  1400 800
+	1100 800  1400 800 
 Wire Wire Line
-	1350 750  1350 800
-Connection ~ 1350 800
+	1350 750  1350 800 
+Connection ~ 1350 800 
 Wire Wire Line
-	700  750  700  950
+	700  750  700  950 
 Wire Wire Line
-	700  900  1400 900
-Connection ~ 700  900
+	700  900  1400 900 
+Connection ~ 700  900 
 Wire Wire Line
-	4750 900  4750 800
+	4750 900  4750 800 
 Wire Wire Line
-	3900 900  4750 900
+	3900 900  4750 900 
 Wire Wire Line
-	4450 800  4450 900
-Connection ~ 4450 900
+	4450 800  4450 900 
+Connection ~ 4450 900 
 Wire Wire Line
 	1400 1900 1300 1900
 Wire Wire Line
@@ -680,7 +666,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 1100 5300 1100
 Wire Wire Line
-	5000 1100 5000 950
+	5000 1100 5000 950 
 Wire Wire Line
 	5300 1100 5300 1050
 Connection ~ 5000 1100
@@ -747,7 +733,7 @@ F 1 "PWR_FLAG" H 6400 3274 50  0000 C CNN
 F 2 "" H 5150 2100 50  0001 C CNN
 F 3 "" H 5150 2100 50  0001 C CNN
 	1    6400 3100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Connection ~ 6400 3150
 $Comp
@@ -762,13 +748,13 @@ F 4 "digikey" H 9800 1725 60  0001 C CNN "Vendor"
 F 5 "102-3539-1-ND" H 9900 1825 60  0001 C CNN "PartNumber"
 F 6 "SPEAKER 8OHM 300MW TOP PORT 87DB" H 10000 1925 60  0001 C CNN "Description"
 	1    9650 1400
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
-L LM48310 U?
+L LM48310 U3
 U 1 1 59B9B19E
 P 8550 1350
-F 0 "U?" H 8950 1650 60  0000 C CNN
+F 0 "U3" H 8950 1650 60  0000 C CNN
 F 1 "LM48310" H 8200 1650 60  0000 C CNN
 F 2 "audio_controller_3x2:10-WFDFN_EXPOSED_PAD" H 8850 1550 60  0001 C CNN
 F 3 "" H 8550 1350 60  0001 C CNN
@@ -776,7 +762,7 @@ F 4 "digikey" H 9050 1750 60  0001 C CNN "Vendor"
 F 5 "LM48310SD/NOPBCT-ND" H 9150 1850 60  0001 C CNN "PartNumber"
 F 6 "IC AMP AUDIO PWR 2.6W MONO 10SON" H 9250 1950 60  0001 C CNN "Description"
 	1    8550 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9150 1400 9450 1400
@@ -788,25 +774,25 @@ Text Label 9200 1500 0    60   ~ 0
 AMP-
 NoConn ~ 9150 1200
 $Comp
-L VEE #PWR?
+L VEE #PWR04
 U 1 1 59B9B7F7
 P 8550 900
-F 0 "#PWR?" H 4300 50  50  0001 C CNN
+F 0 "#PWR04" H 4300 50  50  0001 C CNN
 F 1 "VEE" H 8567 1073 50  0000 C CNN
 F 2 "" H 4300 200 50  0001 C CNN
 F 3 "" H 4300 200 50  0001 C CNN
-	1    8550 900
-	1    0    0    -1
+	1    8550 900 
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8500 1000 8500 950
+	8500 1000 8500 950 
 Wire Wire Line
-	8500 950  8600 950
+	8500 950  8600 950 
 Wire Wire Line
 	8600 950  8600 1000
 Wire Wire Line
-	8550 950  8550 900
-Connection ~ 8550 950
+	8550 950  8550 900 
+Connection ~ 8550 950 
 Wire Wire Line
 	3900 1000 4000 1000
 Wire Wire Line
@@ -821,15 +807,15 @@ NoConn ~ 1400 1200
 Wire Wire Line
 	1300 1600 1400 1600
 $Comp
-L GND #PWR?
+L GND #PWR06
 U 1 1 59B99483
 P 8550 1750
-F 0 "#PWR?" H 7350 150 50  0001 C CNN
+F 0 "#PWR06" H 7350 150 50  0001 C CNN
 F 1 "GND" H 8555 1577 50  0000 C CNN
 F 2 "" H 7350 400 50  0001 C CNN
 F 3 "" H 7350 400 50  0001 C CNN
 	1    8550 1750
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8550 1700 8550 1750
@@ -838,18 +824,227 @@ SPEAKER_ENABLE
 Wire Wire Line
 	7850 1300 7950 1300
 $Comp
-L VEE #PWR?
+L VEE #PWR02
 U 1 1 59B99ACA
 P 7900 1150
-F 0 "#PWR?" H 3650 300 50  0001 C CNN
+F 0 "#PWR02" H 3650 300 50  0001 C CNN
 F 1 "VEE" H 7917 1323 50  0000 C CNN
 F 2 "" H 3650 450 50  0001 C CNN
 F 3 "" H 3650 450 50  0001 C CNN
 	1    7900 1150
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7900 1150 7900 1200
 Wire Wire Line
 	7900 1200 7950 1200
+$Comp
+L 1uF C10
+U 1 1 59B9A980
+P 7600 1450
+F 0 "C10" V 7650 1400 40  0000 R CNN
+F 1 "1uF" H 7600 1450 30  0000 C CNN
+F 2 "audio_controller_3x2:SM1210" H 7638 1300 30  0001 C CNN
+F 3 "" H 7600 1450 60  0000 C CNN
+F 4 "digikey" H 7700 1650 60  0001 C CNN "Vendor"
+F 5 "399-8219-1-ND" H 7800 1750 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 1UF 100V X7R 1210" H 7900 1850 60  0001 C CNN "Description"
+	1    7600 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 1uF C11
+U 1 1 59B9AEDB
+P 7600 1650
+F 0 "C11" V 7650 1600 40  0000 R CNN
+F 1 "1uF" H 7600 1650 30  0000 C CNN
+F 2 "audio_controller_3x2:SM1210" H 7638 1500 30  0001 C CNN
+F 3 "" H 7600 1650 60  0000 C CNN
+F 4 "digikey" H 7700 1850 60  0001 C CNN "Vendor"
+F 5 "399-8219-1-ND" H 7800 1950 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 1UF 100V X7R 1210" H 7900 2050 60  0001 C CNN "Description"
+	1    7600 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 1500 7900 1500
+Wire Wire Line
+	7900 1500 7900 1650
+Wire Wire Line
+	7900 1650 7800 1650
+Wire Wire Line
+	7950 1400 7850 1400
+Wire Wire Line
+	7850 1400 7850 1450
+Wire Wire Line
+	7850 1450 7800 1450
+$Comp
+L 2.21k R3
+U 1 1 59B9B27D
+P 6800 1450
+F 0 "R3" V 6700 1450 40  0000 C CNN
+F 1 "2.21k" V 6800 1450 40  0000 C CNN
+F 2 "audio_controller_3x2:SM1210" V 6730 1450 30  0001 C CNN
+F 3 "" H 6800 1450 30  0000 C CNN
+F 4 "digikey" V 6980 1550 60  0001 C CNN "Vendor"
+F 5 "P2.21KAACT-ND" V 7080 1650 60  0001 C CNN "PartNumber"
+F 6 "RES SMD 2.21K OHM 1% 1/2W 1210" V 7180 1750 60  0001 C CNN "Description"
+	1    6800 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L 2.21k R4
+U 1 1 59B9B412
+P 6800 1650
+F 0 "R4" V 6700 1650 40  0000 C CNN
+F 1 "2.21k" V 6800 1650 40  0000 C CNN
+F 2 "audio_controller_3x2:SM1210" V 6730 1650 30  0001 C CNN
+F 3 "" H 6800 1650 30  0000 C CNN
+F 4 "digikey" V 6980 1750 60  0001 C CNN "Vendor"
+F 5 "P2.21KAACT-ND" V 7080 1850 60  0001 C CNN "PartNumber"
+F 6 "RES SMD 2.21K OHM 1% 1/2W 1210" V 7180 1950 60  0001 C CNN "Description"
+	1    6800 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 1450 7400 1450
+Wire Wire Line
+	7050 1650 7400 1650
+Wire Wire Line
+	6550 1450 6450 1450
+Wire Wire Line
+	6550 1650 6450 1650
+Text Label 6450 1450 2    60   ~ 0
+DAC
+Text Label 6450 1650 2    60   ~ 0
+AGND
+$Comp
+L 3.3nF C9
+U 1 1 59B9D598
+P 7350 2000
+F 0 "C9" H 7350 2100 40  0000 L CNN
+F 1 "3.3nF" H 7350 2000 30  0000 C CNN
+F 2 "audio_controller_3x2:SM1210" H 7388 1850 30  0001 C CNN
+F 3 "" H 7350 2000 60  0000 C CNN
+F 4 "digikey" H 7450 2200 60  0001 C CNN "Vendor"
+F 5 "478-5964-1-ND" H 7550 2300 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 3300PF 2KV X7R 1210" H 7650 2400 60  0001 C CNN "Description"
+	1    7350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3.3nF C8
+U 1 1 59B9D911
+P 7150 2000
+F 0 "C8" H 7150 2100 40  0000 L CNN
+F 1 "3.3nF" H 7150 2000 30  0000 C CNN
+F 2 "audio_controller_3x2:SM1210" H 7188 1850 30  0001 C CNN
+F 3 "" H 7150 2000 60  0000 C CNN
+F 4 "digikey" H 7250 2200 60  0001 C CNN "Vendor"
+F 5 "478-5964-1-ND" H 7350 2300 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 3300PF 2KV X7R 1210" H 7450 2400 60  0001 C CNN "Description"
+	1    7150 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1800 7150 1450
+Connection ~ 7150 1450
+Wire Wire Line
+	7350 1800 7350 1650
+Connection ~ 7350 1650
+Wire Wire Line
+	7150 2200 7150 2250
+Wire Wire Line
+	7150 2250 7350 2250
+Wire Wire Line
+	7350 2250 7350 2200
+Wire Wire Line
+	7250 2250 7250 2350
+Wire Wire Line
+	7250 2350 7300 2350
+Connection ~ 7250 2250
+Text Label 7300 2350 0    60   ~ 0
+AGND
+$Comp
+L 2.2uF C12
+U 1 1 59B9E31B
+P 8900 2300
+F 0 "C12" H 8900 2400 40  0000 L CNN
+F 1 "2.2uF" H 8900 2300 30  0000 C CNN
+F 2 "audio_controller_3x2:SM1210" H 8938 2150 30  0001 C CNN
+F 3 "" H 8900 2300 60  0000 C CNN
+F 4 "digikey" H 9000 2500 60  0001 C CNN "Vendor"
+F 5 "478-3591-1-ND" H 9100 2600 60  0001 C CNN "PartNumber"
+F 6 "2.2uF 50V Ceramic Capacitor X7R 1210" H 9200 2700 60  0001 C CNN "Description"
+	1    8900 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0.1uF C13
+U 1 1 59B9E451
+P 9100 2300
+F 0 "C13" H 9100 2400 40  0000 L CNN
+F 1 "0.1uF" H 9100 2300 30  0000 C CNN
+F 2 "audio_controller_3x2:SM1210" H 9138 2150 30  0001 C CNN
+F 3 "" H 9100 2300 60  0000 C CNN
+F 4 "digikey" H 9200 2500 60  0001 C CNN "Vendor"
+F 5 "399-13229-1-ND" H 9300 2600 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 0.1UF 100V X7R 1210" H 9400 2700 60  0001 C CNN "Description"
+	1    9100 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L VEE #PWR015
+U 1 1 59B9E60A
+P 9000 2000
+F 0 "#PWR015" H 4750 1150 50  0001 C CNN
+F 1 "VEE" H 9017 2173 50  0000 C CNN
+F 2 "" H 4750 1300 50  0001 C CNN
+F 3 "" H 4750 1300 50  0001 C CNN
+	1    9000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 59B9E675
+P 9000 2600
+F 0 "#PWR025" H 7800 1000 50  0001 C CNN
+F 1 "GND" H 9005 2427 50  0000 C CNN
+F 2 "" H 7800 1250 50  0001 C CNN
+F 3 "" H 7800 1250 50  0001 C CNN
+	1    9000 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 2100 8900 2050
+Wire Wire Line
+	8900 2050 9100 2050
+Wire Wire Line
+	9100 2050 9100 2100
+Wire Wire Line
+	8900 2500 8900 2550
+Wire Wire Line
+	8900 2550 9100 2550
+Wire Wire Line
+	9100 2550 9100 2500
+Wire Wire Line
+	9000 2550 9000 2600
+Connection ~ 9000 2550
+Wire Wire Line
+	9000 2000 9000 2050
+Connection ~ 9000 2050
+$Comp
+L SGTL5000 U1
+U 1 1 59B9F587
+P 5750 4650
+F 0 "U1" H 6250 5350 60  0000 C CNN
+F 1 "SGTL5000" H 5350 5350 60  0000 C CNN
+F 2 "audio_controller_3x2:QFN-5x5-32" H 6050 5250 60  0001 C CNN
+F 3 "" H 5750 4650 60  0001 C CNN
+F 4 "digikey" H 6250 5450 60  0001 C CNN "Vendor"
+F 5 "SGTL5000XNAA3R2CT-ND" H 6350 5550 60  0001 C CNN "PartNumber"
+F 6 "Stereo Audio Interface 32-QFN" H 6450 5650 60  0001 C CNN "Description"
+	1    5750 4650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
