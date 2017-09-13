@@ -31,7 +31,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:audio_controller_3x2
 LIBS:components
-LIBS:audio_controller_3x2-cache
 EELAYER 26 0
 EELAYER END
 $Descr A 11000 8500
@@ -39,7 +38,7 @@ encoding utf-8
 Sheet 1 1
 Title "audio_controller_3x2"
 Date ""
-Rev "1.0"
+Rev "1.1"
 Comp "Janelia"
 Comment1 ""
 Comment2 ""
@@ -754,4 +753,20 @@ F 3 "" H 5150 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6400 3150
+$Comp
+L SPEAKER_8OHM_300MW SP1
+U 1 1 59B97E9C
+P 7500 1850
+F 0 "SP1" H 7450 1950 50  0000 C CNN
+F 1 "SPEAKER_8OHM_300MW" V 7700 1800 50  0000 C CNN
+F 2 "audio_controller_3x2:SPEAKER_8OHM_300MW" H 7500 1650 50  0001 C CNN
+F 3 "" H 7490 1800 50  0001 C CNN
+F 4 "digikey" H 7650 2175 60  0001 C CNN "Vendor"
+F 5 "102-3539-1-ND" H 7750 2275 60  0001 C CNN "PartNumber"
+F 6 "SPEAKER 8OHM 300MW TOP PORT 87DB" H 7850 2375 60  0001 C CNN "Description"
+	1    7500 1850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7300 1850
+NoConn ~ 7300 1950
 $EndSCHEMATC
