@@ -10,4 +10,9 @@ D DC Barrel Jack
 K DC power barrel jack connector
 $ENDCMP
 #
+$CMP SPEAKER_8OHM_300MW
+D speaker
+K speaker sound
+$ENDCMP
+#
 #End Doc Library
