@@ -1,5 +1,5 @@
 Item,Reference(s),Value,Quantity,Description,PartNumber,Vendor
-1,C1 C3 C6,0.1uF,3,CAP CER 0.1UF 50V 10% X7R 1210,478-3586-1-ND,digikey
+1,C1 C3 C6,0.1uF,3,CAP CER 0.1UF 100V X7R 1210,399-13229-1-ND,digikey
 2,C2 C5 C7,2.2uF,3,2.2uF 50V Ceramic Capacitor X7R 1210,478-3591-1-ND,digikey
 3,C4,0.15uF,1,0.15uF 100V Ceramic Capacitor X7R 1210,399-11615-1-ND,digikey
 4,J1,AUDIO_JACK_3.5MM,1,3.50mm Headphone Phone Jack Stereo Connector Solder,CP-3523SJCT-ND,digikey
