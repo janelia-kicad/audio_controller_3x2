@@ -1,0 +1,30 @@
+G04 Gerber job file with board parameters*
+%TF.FileFunction,JobInfo*%
+%TF.Part,SinglePCB*%
+G04 Single PCB fabrication instructions*
+%TF.GenerationSoftware,KiCad,Pcbnew,no-vcs-found-33cc7b3~60~ubuntu16.04.1*%
+%TF.CreationDate,2017-09-14T13:01:55-04:00*%
+%TF.ProjectId,audio_controller_3x2,617564696F5F636F6E74726F6C6C6572,1.1*%
+%MOMM*%
+G04 Overall board parameters*
+%TJ.B.Size.X,70.714*%
+%TJ.B.Size.Y,42.139*%
+%TJ.B.LayerNum,2*%
+%TJ.B.Overall.Thickness,1.600*%
+%TJ.B.Legend.Present,Both*%
+%TJ.B.SolderMask.Present,Both*%
+G04 board design rules*
+%TJ.D.PadToPad.Outer,0.025*%
+%TJ.D.PadToTrack.Outer,0.025*%
+%TJ.D.TrackToTrack.Outer,0.025*%
+%TJ.D.MinLineWidth.Outer,0.254*%
+%TJ.D.TrackToRegion.Outer,0.203*%
+%TJ.D.RegionToRegion.Outer,0.203*%
+G04 Layer Structure*
+%TJ.L."Copper,L1,Top",Positive,audio_controller_3x2-F.Cu.gtl*%
+%TJ.L."Copper,L2,Bot",Positive,audio_controller_3x2-B.Cu.gbl*%
+%TJ.L."Legend,Bot",Positive,audio_controller_3x2-B.SilkS.gbo*%
+%TJ.L."Legend,Top",Positive,audio_controller_3x2-F.SilkS.gto*%
+%TJ.L."SolderMask,Bot",Negative,audio_controller_3x2-B.Mask.gbs*%
+%TJ.L."SolderMask,Top",Negative,audio_controller_3x2-F.Mask.gts*%
+M02*
