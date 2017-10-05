@@ -41,7 +41,7 @@
       (footprint audio_controller_3x2:SM1210)
       (fields
         (field (name Vendor) digikey)
-        (field (name PartNumber) 399-11615-1-ND)
+        (field (name PartNumber) 399-15599-1-ND)
         (field (name Description) "0.15uF 100V Ceramic Capacitor X7R 1210"))
       (libsource (lib audio_controller_3x2) (part 0.15uF))
       (sheetpath (names /) (tstamps /))
@@ -267,7 +267,7 @@
         (field (name Value) 0.15uF)
         (field (name Footprint) audio_controller_3x2:SM1210)
         (field (name Vendor) digikey)
-        (field (name PartNumber) 399-11615-1-ND)
+        (field (name PartNumber) 399-15599-1-ND)
         (field (name Description) "0.15uF 100V Ceramic Capacitor X7R 1210"))
       (pins
         (pin (num 1) (name ~) (type passive))

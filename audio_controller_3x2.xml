@@ -49,7 +49,7 @@
       <footprint>audio_controller_3x2:SM1210</footprint>
       <fields>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">399-11615-1-ND</field>
+        <field name="PartNumber">399-15599-1-ND</field>
         <field name="Description">0.15uF 100V Ceramic Capacitor X7R 1210</field>
       </fields>
       <libsource lib="audio_controller_3x2" part="0.15uF"/>
@@ -321,7 +321,7 @@
         <field name="Value">0.15uF</field>
         <field name="Footprint">audio_controller_3x2:SM1210</field>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">399-11615-1-ND</field>
+        <field name="PartNumber">399-15599-1-ND</field>
         <field name="Description">0.15uF 100V Ceramic Capacitor X7R 1210</field>
       </fields>
       <pins>
