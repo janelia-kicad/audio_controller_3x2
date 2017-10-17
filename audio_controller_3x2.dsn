@@ -3,7 +3,7 @@
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad "KiCad's Pcbnew")
-    (host_version "no-vcs-found-33cc7b3~60~ubuntu16.04.1")
+    (host_version "no-vcs-found-1ec7fef~60~ubuntu16.04.1")
   )
   (resolution um 10)
   (unit um)
@@ -26,7 +26,7 @@
     )
     (via "Via[0-1]_889:635_um")
     (rule
-      (width 250)
+      (width 254)
       (clearance 25.5)
       (clearance 25.5 (type default_smd))
       (clearance 6.35 (type smd_smd))
@@ -43,7 +43,7 @@
       (place MDB1 107315 -88900 front 0 (PN MODULAR_DEVICE_BASE_3X2_MALE))
     )
     (component "audio_controller_3x2:QFN-5x5-32"
-      (place U1 130810 -88900 back 0 (PN SGTL5000))
+      (place U1 135890 -88900 back 0 (PN SGTL5000))
     )
     (component audio_controller_3x2:SM1210
       (place C1 130810 -99060 back 270 (PN 0.1uF))
@@ -355,8 +355,8 @@
   )
   (network
     (net GND
-      (pins U3-8 MDB1-GND U1-PAD U1-31 U1-32 U1-1 U1-3 U1-4 U1-7 C1-2 C2-2 C3-2 C4-2
-        C5-2 C6-2 C7-2 U2-3 C12-2 C13-2)
+      (pins U3-8 MDB1-GND U1-PAD U1-31 U1-32 U1-1 U1-3 U1-7 C1-2 C2-2 C3-2 C4-2 C5-2
+        C6-2 C7-2 U2-3 C12-2 C13-2)
     )
     (net +3V3
       (pins MDB1-3V3 U1-20 C1-1 C5-1 C6-1 L1-1 R1-1 R2-1 U2-1)
@@ -427,15 +427,93 @@
     (net /AMP+
       (pins SP1-1 U3-10)
     )
-    (net "Net-(U3-Pad6)"
-      (pins U3-6)
+    (net /HP_VGND
+      (pins U1-4 J1-1)
+    )
+    (net "Net-(MDB1-PadAREF)"
+      (pins MDB1-AREF)
+    )
+    (net "Net-(MDB1-Pad21)"
+      (pins MDB1-21)
+    )
+    (net "Net-(MDB1-Pad20)"
+      (pins MDB1-20)
+    )
+    (net "Net-(MDB1-Pad17)"
+      (pins MDB1-17)
+    )
+    (net "Net-(MDB1-Pad16)"
+      (pins MDB1-16)
+    )
+    (net "Net-(MDB1-Pad15)"
+      (pins MDB1-15)
+    )
+    (net "Net-(MDB1-Pad14)"
+      (pins MDB1-14)
+    )
+    (net "Net-(MDB1-Pad28)"
+      (pins MDB1-28)
+    )
+    (net "Net-(MDB1-Pad12)"
+      (pins MDB1-12)
+    )
+    (net "Net-(MDB1-Pad10)"
+      (pins MDB1-10)
+    )
+    (net "Net-(MDB1-Pad29)"
+      (pins MDB1-29)
+    )
+    (net "Net-(MDB1-Pad30)"
+      (pins MDB1-30)
+    )
+    (net "Net-(MDB1-Pad5)"
+      (pins MDB1-5)
+    )
+    (net "Net-(MDB1-Pad4)"
+      (pins MDB1-4)
+    )
+    (net "Net-(MDB1-Pad3)"
+      (pins MDB1-3)
+    )
+    (net "Net-(MDB1-Pad2)"
+      (pins MDB1-2)
+    )
+    (net "Net-(MDB1-Pad25)"
+      (pins MDB1-25)
+    )
+    (net VDD
+      (pins MDB1-VDD)
+    )
+    (net "Net-(MDB1-Pad24)"
+      (pins MDB1-24)
+    )
+    (net "Net-(U1-Pad11)"
+      (pins U1-11)
+    )
+    (net "Net-(U1-Pad12)"
+      (pins U1-12)
+    )
+    (net "Net-(U1-Pad13)"
+      (pins U1-13)
+    )
+    (net "Net-(U1-Pad14)"
+      (pins U1-14)
+    )
+    (net "Net-(U1-Pad15)"
+      (pins U1-15)
+    )
+    (net "Net-(U1-Pad16)"
+      (pins U1-16)
+    )
+    (net "Net-(U1-Pad18)"
+      (pins U1-18)
     )
     (class kicad_default ""
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
       (rule
-        (width 250)
+        (width 254)
         (clearance 25.5)
       )
     )
@@ -457,7 +535,7 @@
         (clearance 254.1)
       )
     )
-    (class POWER +1V5 +3V3
+    (class POWER +1V5 +3V3 VDD
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
@@ -466,10 +544,16 @@
         (clearance 101.7)
       )
     )
-    (class SIGNAL /AGND /AMP+ "/AMP-" /BCLK /DAC /HP_L /HP_R /I2SRX /I2STX
-      /LRCLK /MCLK /SCL /SDA /SPEAKER_ENABLE "Net-(C10-Pad1)" "Net-(C10-Pad2)"
-      "Net-(C11-Pad1)" "Net-(C11-Pad2)" "Net-(C2-Pad1)" "Net-(C4-Pad1)" "Net-(U3-Pad6)"
-      VEE
+    (class SIGNAL /AGND /BCLK /DAC /HP_L /HP_R /I2SRX /I2STX /LRCLK /MCLK
+      /SCL /SDA /SPEAKER_ENABLE "Net-(C10-Pad1)" "Net-(C10-Pad2)" "Net-(C11-Pad1)"
+      "Net-(C11-Pad2)" "Net-(C2-Pad1)" "Net-(C4-Pad1)" "Net-(MDB1-Pad10)"
+      "Net-(MDB1-Pad12)" "Net-(MDB1-Pad14)" "Net-(MDB1-Pad15)" "Net-(MDB1-Pad16)"
+      "Net-(MDB1-Pad17)" "Net-(MDB1-Pad2)" "Net-(MDB1-Pad20)" "Net-(MDB1-Pad21)"
+      "Net-(MDB1-Pad24)" "Net-(MDB1-Pad25)" "Net-(MDB1-Pad28)" "Net-(MDB1-Pad29)"
+      "Net-(MDB1-Pad3)" "Net-(MDB1-Pad30)" "Net-(MDB1-Pad4)" "Net-(MDB1-Pad5)"
+      "Net-(MDB1-PadAREF)" "Net-(U1-Pad11)" "Net-(U1-Pad12)" "Net-(U1-Pad13)"
+      "Net-(U1-Pad14)" "Net-(U1-Pad15)" "Net-(U1-Pad16)" "Net-(U1-Pad18)"
+      "Net-(U3-Pad6)"
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
@@ -478,7 +562,16 @@
         (clearance 101.7)
       )
     )
-    (class SUPERPOWER
+    (class SUPERPOWER /AMP+ "/AMP-" VEE
+      (circuit
+        (use_via Via[0-1]_889:635_um)
+      )
+      (rule
+        (width 355.6)
+        (clearance 101.7)
+      )
+    )
+    (class VGND /HP_VGND
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
