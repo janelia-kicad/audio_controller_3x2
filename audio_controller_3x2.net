@@ -1,8 +1,8 @@
 (export (version D)
   (design
     (source /home/polidorop/git/kicad/audio_controller_3x2/audio_controller_3x2.sch)
-    (date "Tue 17 Oct 2017 11:20:14 AM EDT")
-    (tool "Eeschema no-vcs-found-1ec7fef~60~ubuntu16.04.1")
+    (date "Thu 19 Oct 2017 01:30:07 PM EDT")
+    (tool "Eeschema no-vcs-found-72d4889~60~ubuntu16.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title audio_controller_3x2)
@@ -518,7 +518,7 @@
       (node (ref L1) (pin 1)))
     (net (code 4) (name "Net-(MDB1-Pad2)")
       (node (ref MDB1) (pin 2)))
-    (net (code 5) (name /SPEAKER_ENABLE)
+    (net (code 5) (name /PCB_SPEAKER_ENABLE)
       (node (ref U3) (pin 4))
       (node (ref MDB1) (pin 6)))
     (net (code 6) (name /AGND)

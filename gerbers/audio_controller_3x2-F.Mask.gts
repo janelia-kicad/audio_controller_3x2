@@ -1,12 +1,12 @@
-%TF.GenerationSoftware,KiCad,Pcbnew,no-vcs-found-33cc7b3~60~ubuntu16.04.1*%
-%TF.CreationDate,2017-09-14T13:01:55-04:00*%
-%TF.ProjectId,audio_controller_3x2,617564696F5F636F6E74726F6C6C6572,1.1*%
+%TF.GenerationSoftware,KiCad,Pcbnew,no-vcs-found-72d4889~60~ubuntu16.04.1*%
+%TF.CreationDate,2017-10-19T13:37:08-04:00*%
+%TF.ProjectId,audio_controller_3x2,617564696F5F636F6E74726F6C6C6572,1.2*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Soldermask,Top*%
 %TF.FilePolarity,Negative*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW no-vcs-found-33cc7b3~60~ubuntu16.04.1) date Thu Sep 14 13:01:55 2017*
+G04 Created by KiCad (PCBNEW no-vcs-found-72d4889~60~ubuntu16.04.1) date Thu Oct 19 13:37:08 2017*
 %MOMM*%
 %LPD*%
 G01*
@@ -81,7 +81,7 @@ X90805000Y-71120000D03*
 %TD*%
 D16*
 %TO.C,U1*%
-X130810000Y-88900000D03*
+X135890000Y-88900000D03*
 %TD*%
 D17*
 %TO.C,J1*%
