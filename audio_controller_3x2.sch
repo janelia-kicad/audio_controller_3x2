@@ -1,8 +1,4 @@
-EESchema Schematic File Version 3
-LIBS:power
-LIBS:audio_controller_3x2
-LIBS:components
-LIBS:audio_controller_3x2-cache
+EESchema Schematic File Version 4
 EELAYER 26 0
 EELAYER END
 $Descr A 11000 8500
@@ -18,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MODULAR_DEVICE_BASE_3X2_MALE MDB1
+L audio_controller_3x2:MODULAR_DEVICE_BASE_3X2_MALE MDB1
 U 1 1 589B6745
 P 2900 1650
 F 0 "MDB1" H 2900 2647 60  0000 C CNN
@@ -33,7 +29,7 @@ F 7 "2" H 2150 1350 60  0001 C CNN "PartCount"
 	1    0    0    -1  
 $EndComp
 $Comp
-L VDD #PWR01
+L power:VDD #PWR01
 U 1 1 589B67C3
 P 1600 850
 F 0 "#PWR01" H 350 -300 50  0001 C CNN
@@ -44,7 +40,7 @@ F 3 "" H 350 -150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG02
+L power:PWR_FLAG #FLG02
 U 1 1 589B67D9
 P 1350 850
 F 0 "#FLG02" H 100 -75 50  0001 C CNN
@@ -55,7 +51,7 @@ F 3 "" H 100 -150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 589B67FE
 P 950 1050
 F 0 "#PWR03" H -250 -550 50  0001 C CNN
@@ -66,7 +62,7 @@ F 3 "" H -250 -300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG04
+L power:PWR_FLAG #FLG04
 U 1 1 589B6835
 P 950 850
 F 0 "#FLG04" H -300 -75 50  0001 C CNN
@@ -93,7 +89,7 @@ NoConn ~ 4150 2000
 NoConn ~ 4150 2100
 NoConn ~ 4150 2200
 $Comp
-L VEE #PWR05
+L power:VEE #PWR05
 U 1 1 589B69B5
 P 4700 900
 F 0 "#PWR05" H 450 50  50  0001 C CNN
@@ -104,7 +100,7 @@ F 3 "" H 450 200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG06
+L power:PWR_FLAG #FLG06
 U 1 1 589B69CA
 P 5000 900
 F 0 "#FLG06" H 3750 -25 50  0001 C CNN
@@ -154,7 +150,7 @@ HP_R
 Text Label 6650 4750 0    60   ~ 0
 HP_VGND
 $Comp
-L AUDIO_JACK_3.5MM J1
+L audio_controller_3x2:AUDIO_JACK_3.5MM J1
 U 1 1 58D57AE1
 P 8500 4650
 F 0 "J1" H 8500 4850 50  0000 C CNN
@@ -174,7 +170,7 @@ HP_R
 Text Label 7950 4750 2    60   ~ 0
 HP_VGND
 $Comp
-L GND #PWR07
+L power:GND #PWR07
 U 1 1 58D57D8B
 P 5750 5750
 F 0 "#PWR07" H 4550 4150 50  0001 C CNN
@@ -185,7 +181,7 @@ F 3 "" H 4550 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR08
+L power:GND #PWR08
 U 1 1 58D57EAB
 P 4900 5250
 F 0 "#PWR08" H 3700 3650 50  0001 C CNN
@@ -196,7 +192,7 @@ F 3 "" H 3700 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 0.15uF C4
+L audio_controller_3x2:0.15uF C4
 U 1 1 58D5803C
 P 4700 5150
 F 0 "C4" H 4700 5250 40  0000 L CNN
@@ -210,7 +206,7 @@ F 6 "0.15uF 100V Ceramic Capacitor X7R 1210" H 5000 5550 60  0001 C CNN "Descrip
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L power:GND #PWR09
 U 1 1 58D5812B
 P 4700 5400
 F 0 "#PWR09" H 3500 3800 50  0001 C CNN
@@ -221,7 +217,7 @@ F 3 "" H 3500 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AP7313_1.5V U2
+L audio_controller_3x2:AP7313_1.5V U2
 U 1 1 58D5840E
 P 2300 4100
 F 0 "U2" H 2300 4347 60  0000 C CNN
@@ -235,7 +231,7 @@ F 6 "Linear Voltage Regulator IC Positive Fixed 1 Output 1.5V 150mA SOT-23-3" H 
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2.2uF C5
+L audio_controller_3x2:2.2uF C5
 U 1 1 58D586BC
 P 1700 4350
 F 0 "C5" H 1700 4450 40  0000 L CNN
@@ -249,7 +245,7 @@ F 6 "2.2uF 50V Ceramic Capacitor X7R 1210" H 2000 4750 60  0001 C CNN "Descripti
 	1    0    0    -1  
 $EndComp
 $Comp
-L 0.1uF C6
+L audio_controller_3x2:0.1uF C6
 U 1 1 58D58809
 P 1900 4350
 F 0 "C6" H 1900 4450 40  0000 L CNN
@@ -263,7 +259,7 @@ F 6 "CAP CER 0.1UF 100V X7R 1210" H 2200 4750 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2.2uF C7
+L audio_controller_3x2:2.2uF C7
 U 1 1 58D589E3
 P 2700 4350
 F 0 "C7" H 2700 4450 40  0000 L CNN
@@ -277,7 +273,7 @@ F 6 "2.2uF 50V Ceramic Capacitor X7R 1210" H 3000 4750 60  0001 C CNN "Descripti
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR010
+L power:GND #PWR010
 U 1 1 58D58A5A
 P 1700 4600
 F 0 "#PWR010" H 500 3000 50  0001 C CNN
@@ -288,7 +284,7 @@ F 3 "" H 500 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR011
+L power:GND #PWR011
 U 1 1 58D58A9D
 P 1900 4600
 F 0 "#PWR011" H 700 3000 50  0001 C CNN
@@ -299,7 +295,7 @@ F 3 "" H 700 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L power:GND #PWR012
 U 1 1 58D58AB8
 P 2300 4400
 F 0 "#PWR012" H 1100 2800 50  0001 C CNN
@@ -310,7 +306,7 @@ F 3 "" H 1100 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L power:GND #PWR013
 U 1 1 58D58AD3
 P 2700 4600
 F 0 "#PWR013" H 1500 3000 50  0001 C CNN
@@ -321,7 +317,7 @@ F 3 "" H 1500 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR014
+L power:+3.3V #PWR014
 U 1 1 58D58DDB
 P 5250 1050
 F 0 "#PWR014" H 5250 900 50  0001 C CNN
@@ -332,7 +328,7 @@ F 3 "" H 5250 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG015
+L power:PWR_FLAG #FLG015
 U 1 1 58D58EBA
 P 5550 1150
 F 0 "#FLG015" H 4300 225 50  0001 C CNN
@@ -343,7 +339,7 @@ F 3 "" H 4300 150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR016
+L power:+3.3V #PWR016
 U 1 1 58D58F43
 P 1700 4050
 F 0 "#PWR016" H 1700 3900 50  0001 C CNN
@@ -354,7 +350,7 @@ F 3 "" H 1700 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +1V5 #PWR017
+L power:+1V5 #PWR017
 U 1 1 58D5904C
 P 2800 4050
 F 0 "#PWR017" H 2800 3900 50  0001 C CNN
@@ -365,7 +361,7 @@ F 3 "" H 2800 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +1V5 #PWR018
+L power:+1V5 #PWR018
 U 1 1 58D5929B
 P 5650 3750
 F 0 "#PWR018" H 5650 3600 50  0001 C CNN
@@ -376,7 +372,7 @@ F 3 "" H 5650 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 600@100MHz L1
+L audio_controller_3x2:600@100MHz L1
 U 1 1 58D59498
 P 5800 3150
 F 0 "L1" V 5850 3150 50  0000 C CNN
@@ -390,7 +386,7 @@ F 6 "FERRITE BEAD 600 OHM 1210 1LN" H 6130 3490 60  0001 C CNN "Description"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 0.1uF C1
+L audio_controller_3x2:0.1uF C1
 U 1 1 58D5968D
 P 5350 3400
 F 0 "C1" H 5350 3500 40  0000 L CNN
@@ -404,7 +400,7 @@ F 6 "CAP CER 0.1UF 100V X7R 1210" H 5650 3800 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2.2uF C2
+L audio_controller_3x2:2.2uF C2
 U 1 1 58D59709
 P 6200 3400
 F 0 "C2" H 6200 3500 40  0000 L CNN
@@ -418,7 +414,7 @@ F 6 "2.2uF 50V Ceramic Capacitor X7R 1210" H 6500 3800 60  0001 C CNN "Descripti
 	1    0    0    -1  
 $EndComp
 $Comp
-L 0.1uF C3
+L audio_controller_3x2:0.1uF C3
 U 1 1 58D597AD
 P 6400 3400
 F 0 "C3" H 6400 3500 40  0000 L CNN
@@ -432,7 +428,7 @@ F 6 "CAP CER 0.1UF 100V X7R 1210" H 6700 3800 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L power:GND #PWR019
 U 1 1 58D599D2
 P 5350 3650
 F 0 "#PWR019" H 4150 2050 50  0001 C CNN
@@ -443,7 +439,7 @@ F 3 "" H 4150 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR020
+L power:GND #PWR020
 U 1 1 58D59B2B
 P 6200 3650
 F 0 "#PWR020" H 5000 2050 50  0001 C CNN
@@ -454,7 +450,7 @@ F 3 "" H 5000 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR021
+L power:GND #PWR021
 U 1 1 58D59B66
 P 6400 3650
 F 0 "#PWR021" H 5200 2050 50  0001 C CNN
@@ -465,7 +461,7 @@ F 3 "" H 5200 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR022
+L power:+3.3V #PWR022
 U 1 1 58D59FDA
 P 5350 3100
 F 0 "#PWR022" H 5350 2950 50  0001 C CNN
@@ -476,7 +472,7 @@ F 3 "" H 5350 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2.21k R1
+L audio_controller_3x2:2.21k R1
 U 1 1 58D5A386
 P 4100 3350
 F 0 "R1" V 4000 3350 40  0000 C CNN
@@ -490,7 +486,7 @@ F 6 "RES SMD 2.21K OHM 1% 1/2W 1210" V 4480 3650 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2.21k R2
+L audio_controller_3x2:2.21k R2
 U 1 1 58D5A5D2
 P 4350 3350
 F 0 "R2" V 4250 3350 40  0000 C CNN
@@ -504,7 +500,7 @@ F 6 "RES SMD 2.21K OHM 1% 1/2W 1210" V 4730 3650 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR023
+L power:+3.3V #PWR023
 U 1 1 58D5A631
 P 4100 3050
 F 0 "#PWR023" H 4100 2900 50  0001 C CNN
@@ -515,7 +511,7 @@ F 3 "" H 4100 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR024
+L power:+3.3V #PWR024
 U 1 1 58D5A674
 P 4350 3050
 F 0 "#PWR024" H 4350 2900 50  0001 C CNN
@@ -534,19 +530,19 @@ MCLK
 Wire Wire Line
 	1350 850  1350 900 
 Wire Wire Line
-	1350 900  1650 900 
+	1350 900  1600 900 
 Wire Wire Line
 	1600 850  1600 900 
 Connection ~ 1600 900 
 Wire Wire Line
-	950  850  950  1050
+	950  850  950  1000
 Wire Wire Line
 	950  1000 1650 1000
 Connection ~ 950  1000
 Wire Wire Line
 	5000 1000 5000 900 
 Wire Wire Line
-	4150 1000 5000 1000
+	4150 1000 4700 1000
 Wire Wire Line
 	4700 900  4700 1000
 Connection ~ 4700 1000
@@ -591,7 +587,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 5650 5550 5700
 Wire Wire Line
-	5550 5700 5950 5700
+	5550 5700 5650 5700
 Wire Wire Line
 	5950 5700 5950 5650
 Wire Wire Line
@@ -606,7 +602,7 @@ Connection ~ 5850 5700
 Wire Wire Line
 	4950 5100 4900 5100
 Wire Wire Line
-	4900 5100 4900 5250
+	4900 5100 4900 5200
 Wire Wire Line
 	4950 5200 4900 5200
 Connection ~ 4900 5200
@@ -617,9 +613,9 @@ Wire Wire Line
 Wire Wire Line
 	4700 5350 4700 5400
 Wire Wire Line
-	1700 4050 1700 4150
+	1700 4050 1700 4100
 Wire Wire Line
-	1700 4100 1950 4100
+	1700 4100 1900 4100
 Wire Wire Line
 	1900 4150 1900 4100
 Wire Wire Line
@@ -629,13 +625,13 @@ Wire Wire Line
 Wire Wire Line
 	2300 4350 2300 4400
 Wire Wire Line
-	2650 4100 2800 4100
+	2650 4100 2700 4100
 Wire Wire Line
 	2700 4100 2700 4150
 Wire Wire Line
 	2700 4550 2700 4600
 Wire Wire Line
-	4150 1200 5550 1200
+	4150 1200 5250 1200
 Wire Wire Line
 	5250 1200 5250 1050
 Wire Wire Line
@@ -653,13 +649,13 @@ Wire Wire Line
 Wire Wire Line
 	6400 3650 6400 3600
 Wire Wire Line
-	5350 3100 5350 3200
+	5350 3100 5350 3150
 Wire Wire Line
-	5350 3150 5700 3150
+	5350 3150 5500 3150
 Wire Wire Line
-	5900 3150 6400 3150
+	5900 3150 6100 3150
 Wire Wire Line
-	6400 3100 6400 3200
+	6400 3100 6400 3150
 Wire Wire Line
 	6200 3200 6200 3150
 Connection ~ 6200 3150
@@ -696,7 +692,7 @@ Connection ~ 1700 4100
 Connection ~ 1900 4100
 NoConn ~ 1650 2400
 $Comp
-L PWR_FLAG #FLG025
+L power:PWR_FLAG #FLG025
 U 1 1 58D5B9B9
 P 6400 3100
 F 0 "#FLG025" H 5150 2175 50  0001 C CNN
@@ -708,7 +704,7 @@ F 3 "" H 5150 2100 50  0001 C CNN
 $EndComp
 Connection ~ 6400 3150
 $Comp
-L SPEAKER_8OHM_300MW SP1
+L audio_controller_3x2:SPEAKER_8OHM_300MW SP1
 U 1 1 59B97E9C
 P 9650 1400
 F 0 "SP1" H 9600 1500 50  0000 C CNN
@@ -722,7 +718,7 @@ F 6 "SPEAKER 8OHM 300MW TOP PORT 87DB" H 10000 1925 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM48310 U3
+L audio_controller_3x2:LM48310 U3
 U 1 1 59B9B19E
 P 8550 1350
 F 0 "U3" H 8950 1650 60  0000 C CNN
@@ -745,7 +741,7 @@ Text Label 9200 1500 0    60   ~ 0
 AMP-
 NoConn ~ 9150 1200
 $Comp
-L VEE #PWR04
+L power:VEE #PWR04
 U 1 1 59B9B7F7
 P 8550 900
 F 0 "#PWR04" H 4300 50  50  0001 C CNN
@@ -758,7 +754,7 @@ $EndComp
 Wire Wire Line
 	8500 1000 8500 950 
 Wire Wire Line
-	8500 950  8600 950 
+	8500 950  8550 950 
 Wire Wire Line
 	8600 950  8600 1000
 Wire Wire Line
@@ -778,7 +774,7 @@ NoConn ~ 1650 1300
 Wire Wire Line
 	1550 1700 1650 1700
 $Comp
-L GND #PWR06
+L power:GND #PWR06
 U 1 1 59B99483
 P 8550 1750
 F 0 "#PWR06" H 7350 150 50  0001 C CNN
@@ -795,7 +791,7 @@ PCB_SPEAKER_ENABLE
 Wire Wire Line
 	7850 1300 7950 1300
 $Comp
-L VEE #PWR02
+L power:VEE #PWR02
 U 1 1 59B99ACA
 P 7900 1150
 F 0 "#PWR02" H 3650 300 50  0001 C CNN
@@ -810,7 +806,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 1200 7950 1200
 $Comp
-L 1uF C10
+L audio_controller_3x2:1uF C10
 U 1 1 59B9A980
 P 7600 1450
 F 0 "C10" V 7650 1400 40  0000 R CNN
@@ -824,7 +820,7 @@ F 6 "CAP CER 1UF 100V X7R 1210" H 7900 1850 60  0001 C CNN "Description"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 1uF C11
+L audio_controller_3x2:1uF C11
 U 1 1 59B9AEDB
 P 7600 1650
 F 0 "C11" V 7650 1600 40  0000 R CNN
@@ -850,7 +846,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 1450 7800 1450
 $Comp
-L 2.21k R3
+L audio_controller_3x2:2.21k R3
 U 1 1 59B9B27D
 P 6800 1450
 F 0 "R3" V 6700 1450 40  0000 C CNN
@@ -864,7 +860,7 @@ F 6 "RES SMD 2.21K OHM 1% 1/2W 1210" V 7180 1750 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L 2.21k R4
+L audio_controller_3x2:2.21k R4
 U 1 1 59B9B412
 P 6800 1650
 F 0 "R4" V 6700 1650 40  0000 C CNN
@@ -878,9 +874,9 @@ F 6 "RES SMD 2.21K OHM 1% 1/2W 1210" V 7180 1950 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7050 1450 7400 1450
+	7050 1450 7150 1450
 Wire Wire Line
-	7050 1650 7400 1650
+	7050 1650 7350 1650
 Wire Wire Line
 	6550 1450 6450 1450
 Wire Wire Line
@@ -890,7 +886,7 @@ DAC
 Text Label 6450 1650 2    60   ~ 0
 AGND
 $Comp
-L 3.3nF C9
+L audio_controller_3x2:3.3nF C9
 U 1 1 59B9D598
 P 7350 2000
 F 0 "C9" H 7350 2100 40  0000 L CNN
@@ -904,7 +900,7 @@ F 6 "CAP CER 3300PF 2KV X7R 1210" H 7650 2400 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 3.3nF C8
+L audio_controller_3x2:3.3nF C8
 U 1 1 59B9D911
 P 7150 2000
 F 0 "C8" H 7150 2100 40  0000 L CNN
@@ -926,7 +922,7 @@ Connection ~ 7350 1650
 Wire Wire Line
 	7150 2200 7150 2250
 Wire Wire Line
-	7150 2250 7350 2250
+	7150 2250 7250 2250
 Wire Wire Line
 	7350 2250 7350 2200
 Wire Wire Line
@@ -937,7 +933,7 @@ Connection ~ 7250 2250
 Text Label 7300 2350 0    60   ~ 0
 AGND
 $Comp
-L 2.2uF C12
+L audio_controller_3x2:2.2uF C12
 U 1 1 59B9E31B
 P 8900 2300
 F 0 "C12" H 8900 2400 40  0000 L CNN
@@ -951,7 +947,7 @@ F 6 "2.2uF 50V Ceramic Capacitor X7R 1210" H 9200 2700 60  0001 C CNN "Descripti
 	1    0    0    -1  
 $EndComp
 $Comp
-L 0.1uF C13
+L audio_controller_3x2:0.1uF C13
 U 1 1 59B9E451
 P 9100 2300
 F 0 "C13" H 9100 2400 40  0000 L CNN
@@ -965,7 +961,7 @@ F 6 "CAP CER 0.1UF 100V X7R 1210" H 9400 2700 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L VEE #PWR015
+L power:VEE #PWR015
 U 1 1 59B9E60A
 P 9000 2000
 F 0 "#PWR015" H 4750 1150 50  0001 C CNN
@@ -976,7 +972,7 @@ F 3 "" H 4750 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR025
+L power:GND #PWR025
 U 1 1 59B9E675
 P 9000 2600
 F 0 "#PWR025" H 7800 1000 50  0001 C CNN
@@ -989,13 +985,13 @@ $EndComp
 Wire Wire Line
 	8900 2100 8900 2050
 Wire Wire Line
-	8900 2050 9100 2050
+	8900 2050 9000 2050
 Wire Wire Line
 	9100 2050 9100 2100
 Wire Wire Line
 	8900 2500 8900 2550
 Wire Wire Line
-	8900 2550 9100 2550
+	8900 2550 9000 2550
 Wire Wire Line
 	9100 2550 9100 2500
 Wire Wire Line
@@ -1005,7 +1001,7 @@ Wire Wire Line
 	9000 2000 9000 2050
 Connection ~ 9000 2050
 $Comp
-L SGTL5000 U1
+L audio_controller_3x2:SGTL5000 U1
 U 1 1 59B9F587
 P 5750 4650
 F 0 "U1" H 6250 5350 60  0000 C CNN
@@ -1018,4 +1014,48 @@ F 6 "Stereo Audio Interface 32-QFN" H 6450 5650 60  0001 C CNN "Description"
 	1    5750 4650
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1600 900  1650 900 
+Wire Wire Line
+	950  1000 950  1050
+Wire Wire Line
+	4700 1000 5000 1000
+Wire Wire Line
+	5650 5700 5750 5700
+Wire Wire Line
+	5750 5700 5850 5700
+Wire Wire Line
+	5850 5700 5950 5700
+Wire Wire Line
+	4900 5200 4900 5250
+Wire Wire Line
+	5250 1200 5550 1200
+Wire Wire Line
+	2700 4100 2800 4100
+Wire Wire Line
+	6200 3150 6400 3150
+Wire Wire Line
+	5500 3150 5700 3150
+Wire Wire Line
+	6100 3150 6200 3150
+Wire Wire Line
+	5350 3150 5350 3200
+Wire Wire Line
+	1700 4100 1700 4150
+Wire Wire Line
+	1900 4100 1950 4100
+Wire Wire Line
+	6400 3150 6400 3200
+Wire Wire Line
+	8550 950  8600 950 
+Wire Wire Line
+	7150 1450 7400 1450
+Wire Wire Line
+	7350 1650 7400 1650
+Wire Wire Line
+	7250 2250 7350 2250
+Wire Wire Line
+	9000 2550 9100 2550
+Wire Wire Line
+	9000 2050 9100 2050
 $EndSCHEMATC

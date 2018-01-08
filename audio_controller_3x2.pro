@@ -1,4 +1,4 @@
-update=Mon 27 Mar 2017 10:48:42 AM EDT
+update=Mon 08 Jan 2018 11:19:27 AM EST
 version=1
 last_client=kicad
 [cvpcb]
@@ -41,8 +41,4 @@ LabSize=60
 ERC_TestSimilarLabels=1
 [eeschema]
 version=1
-LibDir=${KILIBS}
-[eeschema/libraries]
-LibName1=power
-LibName2=audio_controller_3x2
-LibName3=components
+LibDir=
