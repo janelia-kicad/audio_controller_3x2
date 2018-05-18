@@ -1,0 +1,5 @@
+* Supplemental Bill of Materials
+#+RESULTS: supplemental-parts
+| Item | Quantity | PartNumber      | Vendor | Description               |
+|------+----------+-----------------+--------+---------------------------|
+|    1 |        1 | N82E16836121042 | newegg | Logitech Z130 5W Speakers |

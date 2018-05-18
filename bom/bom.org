@@ -1,45 +1,6 @@
 # Created 2018-05-18 Fri 09:57
-#+OPTIONS: title:nil author:nil email:nil toc:t |:t ^:nil
-* Repository Information
-
-- Name :: audio_controller_3x2
-- Version :: 1.2
-- License :: Open-Source Hardware
-- URL :: https://github.com/janelia-kicad/audio_controller_3x2
-- Author :: Peter Polidoro
-- Email :: peterpolidoro@gmail.com
-
-** Description
-
-This board plays audio through a pcb mounted speaker and/or external stereo
-speakers.
-
-* Images
-
-[[file:./images/top.png]]
-
-[[file:./images/bottom.png]]
-
-* Schematic
-
-[[file:./schematic/audio_controller_3x2.pdf][./schematic/audio_controller_3x2.pdf]]
-
-[[file:./schematic/images/schematic00.png]]
-
-* Gerbers
-
-Send gerbers zip file to your favorite PCB manufacturer for fabrication.
-
-[[file:./gerbers/audio_controller_3x2_v1.2.zip][./gerbers/audio_controller_3x2_v1.2.zip]]
-
-[[file:./gerbers/images/gerbers00.png]]
-
-[[file:./gerbers/images/gerbers01.png]]
-
 * Bill of Materials
-
-** PCB Parts
-
+#+RESULTS: pcb-parts
 | Item | Reference(s) | Quantity | PartNumber            | Vendor  | Description                                                             |
 |------+--------------+----------+-----------------------+---------+-------------------------------------------------------------------------|
 |    1 | C1 C13 C3 C6 |        4 | 399-13229-1-ND        | digikey | CAP CER 0.1UF 100V X7R 1210                                             |
@@ -55,21 +16,3 @@ Send gerbers zip file to your favorite PCB manufacturer for fabrication.
 |   11 | U1           |        1 | SGTL5000XNAA3R2CT-ND  | digikey | Stereo Audio Interface 32-QFN                                           |
 |   12 | U2           |        1 | AP7313-15SAG-7DICT-ND | digikey | Linear Voltage Regulator IC Positive Fixed 1 Output 1.5V 150mA SOT-23-3 |
 |   13 | U3           |        1 | LM48310SD/NOPBCT-ND   | digikey | IC AMP AUDIO PWR 2.6W MONO 10SON                                        |
-
-** Supplemental Parts
-
-| Item | Quantity | PartNumber      | Vendor | Description               |
-|------+----------+-----------------+--------+---------------------------|
-|    1 |        1 | N82E16836121042 | newegg | Logitech Z130 5W Speakers |
-
-** Vendor Parts Lists
-
-[[file:./bom/digikey_parts.csv][./bom/digikey_parts.csv]]
-
-[[file:./bom/supplemental_newegg_parts.csv][./bom/supplemental_newegg_parts.csv]]
-
-* Supplemental Documentation
-
-** Assembly Instructions
-
-- Solder surface mount and through hole components onto the pcb.
